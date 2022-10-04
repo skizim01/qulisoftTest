@@ -318,4 +318,5 @@ def isNewArchitectureEnabled() {
     return project.hasProperty("newArchEnabled") && project.newArchEnabled == "true"
 }
 apply plugin: 'com.google.android.gms.strict-version-matcher-plugin'
-apply plugin: 'com.google.gms.google-services'  // Google Services plugin
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services' // <- Add this line
